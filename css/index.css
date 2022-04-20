@@ -1,0 +1,145 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1200px;
+  width: 100%;
+  background-color: grey;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+}
+
+
+.inputBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 50%;
+  background-color: #94BFBE;
+  border: 2px solid #61304B;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+#inputText {
+  height: 40px;
+  border: 2px solid #61304B;
+}
+
+#inputButton {
+  height: 45px;
+  border: 2px solid #61304B;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 400px;
+  width: 100%;
+
+}
+
+.textBox {
+  padding: 20px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  min-height: 600px;
+  width: 30%;
+  background-color: aliceblue;
+  border: 2px solid #61304B;
+  border-radius: 10px;
+  position: relative;
+}
+
+.textInLong {
+  margin-top: 8px;
+  font-size: 20px;
+  color: #61304B;
+}
+
+
+.textIn {
+  margin-top: 8px;
+  font-size: 20px;
+  color: #61304B;
+}
+
+.textInLong:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 12px;
+  background: #94BFBD;
+  color: aliceblue;
+  max-width: 400px;
+  z-index: 1;
+  padding: 15px;
+}
+
+
+@media screen and (max-width: 761px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    width: 100%;
+
+  }
+
+  .header {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+  }
+
+  .inputBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50%;
+  }
+
+
+  .textBox {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; */
+    min-height: 320px;
+    width: 70%;
+    /* background-color: #61304B;
+    border: 2px solid aliceblue; */
+    border-radius: 10px;
+  }
+
+
+  #inputText {
+    height: 20px;
+    border: 2px solid #61304B;
+  }
+
+  #inputButton {
+    height: 26px;
+    border: 2px solid #61304B;
+  }
+
+
+
+}
+
+
